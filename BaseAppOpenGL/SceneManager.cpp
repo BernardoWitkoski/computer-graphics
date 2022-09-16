@@ -63,6 +63,10 @@ void CSceneManager::ChangeScene(unsigned int _uiCurrentScene)
 		this->Scene = new CScene3();
 	break;
 
+	case 4:
+		this->Scene = new CScene4();
+		break;
+
 	}
 }
 
@@ -120,6 +124,7 @@ void CSceneManager::KeyDownPressed(WPARAM wParam)
 	if (wParam == '1') ChangeScene(1);
 	if (wParam == '2') ChangeScene(2);
 	if (wParam == '3') ChangeScene(3);
+	if (wParam == '4') ChangeScene(4);
 
 }
 
